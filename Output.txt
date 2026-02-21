@@ -1,0 +1,569 @@
+Enter BrowserStack credentials (or press Enter to skip cloud test)
+
+Username:
+Access Key: 
+
+Starting Local Test...
+
+[Local] Starting session
+[Local] Cookies accepted
+[Local] 
+Article 1
+[Local] Title (ES): Los aranceles de Trump son ilegales
+[Local] Content:
+El Tribunal Supremo marca un límite constitucional claro al presidente, que ha
+jugado de manera caprichosa con el comercio mundial El Tribunal Supremo de
+Estados Unidos asestó este viernes un golpe letal a la política de intimidación
+comercial del presidente Donald Trump contra el resto del mundo, al declarar
+ilegales la mayor parte de los aranceles a las importaciones aprobados por
+decreto por la Casa Blanca. Se trata de un golpe histórico al pilar sobre el que
+descansa la política económica del actual Gobierno de EE UU y una de sus
+principales herramientas de presión en política internacional. Pero sobre todo
+establece un límite claro al Ejecutivo al dictar que el mandatario ha excedido
+la autoridad que le otorgan las leyes estadounidenses. Después de un año de
+ejercicio del poder abusivo y autoritario, esta sentencia supone la mayor
+afirmación de los equilibrios de poder de los que presume la democracia
+estadounidense. Tres magistrados conservadores se sumaron a los tres de
+sensibilidad demócrata para formar una mayoría poco habitual y reafirmar una
+cuestión constitucional inequívoca: los aranceles actúan como impuestos, y el
+Ejecutivo no tiene poder para subir impuestos. Trump ha utilizado de forma
+inconstitucional leyes de emergencia. Con este subterfugio, en febrero de 2025
+impuso aranceles a Canadá, México y China y en abril estableció un arancel
+general del 10% sobre prácticamente todos los países. Los pequeños importadores
+y los Estados demócratas denunciaron la falta de autoridad del presidente para
+subir los impuestos a los estadounidenses. Los aranceles al acero, el aluminio o
+los automóviles no se ven afectados por esta sentencia porque fueron impuestos
+por otros métodos legales.
+[Local] Image saved: article_images\Local_1.jpg
+[Local] 
+Article 2
+[Local] Title (ES): Audacia contra la crisis de vivienda
+[Local] Content:
+El Gobierno de Cataluña muestra el necesario atrevimiento para intervenir en el
+principal problema de los españoles Cataluña será la primera comunidad en atacar
+directamente la especulación sobre la vivienda. El Gobierno de Salvador Illa ha
+pactado con los comunes limitar las adquisiciones de pisos por parte de grandes
+y pequeños propietarios. Como regla general, empresas y particulares podrán
+hacerse con casas para fijar su domicilio y su segunda residencia. A partir de
+ahí, los grandes patrimonios podrán comprar edificios enteros, y los pequeños,
+entre dos y tres viviendas más. En todos los casos, estas deberán destinarse a
+alquiler habitual respetando los precios máximos fijados. La patronal catalana
+ha tildado la medida de “filocomunista”, mientras que el Sindicato de Inquilinos
+la ha criticado por considerar que debería haber ido más lejos. El precio de la
+vivienda, que se ha más que duplicado desde 2014, está teniendo consecuencias
+dramáticas para la economía del día a día de la clase media española. Se come
+las subidas de sueldo, limita la movilidad, agranda las bolsas de precariedad y
+afecta a todos los gastos de las familias. La subida es tan pronunciada que los
+sueldos bajos no pueden ahorrar para comprar. Los que viven de alquiler son
+expulsados de su barrio en cuanto llega una renovación. Es el principal problema
+de los españoles, según el CIS.
+[Local] Image saved: article_images\Local_2.jpg
+[Local] 
+Article 3
+[Local] Title (ES): Monumento a la desmemoria
+[Local] Content:
+La lectura de la inscripción del Arco del Triunfo de Madrid basta para saber que
+no es una puerta de acceso a la ciudad Todavía hoy, quienquiera que por vez
+primera haga su ingreso en la capital de España procedente del noroeste de la
+Península es recibido por un imponente monumento en forma de arco rematado por
+una soberbia cuadriga. Normalmente, no prestará atención a la inscripción
+situada sobre su entablamiento, desde el momento en que se sirve de una lengua
+muerta. No cabe, sin embargo, excluir que quien así se acerca a Madrid sea
+alguien con alguna cultura, la suficiente para advertir que esa lengua es el
+latín, cuya ep...
+[Local] Image saved: article_images\Local_3.jpg
+[Local] 
+Article 4
+[Local] Title (ES): Hijo de extranjeros
+[Local] Content:
+Dar una enseñanza de primera calidad a los descendientes de inmigrantes es la
+herramienta insustituible para integrarlos A diferencia de sus padres, el hijo
+de inmigrantes vive de verdad en el nuevo país. Quizás nació en el otro, pero
+apenas le quedan recuerdos, así que el peso de la nostalgia por la antigua vida
+no puede estorbar su integración. Los padres, los abuelos, o hablan el nuevo
+idioma con mucho acento o no llegan a hablarlo nunca; con esa capacidad
+fulgurante de aprendizaje que tiene un niño, el hijo o nieto se sumerge en el
+nuevo idioma con una destreza de nadador instintivo, y a la vez domina
+perfectamen...
+[Local] Image saved: article_images\Local_4.jpg
+[Local] 
+Article 5
+[Local] Title (ES): ‘Moteras iraníes’
+[Local] Content:
+En Irán, las mujeres no tienen reconocido oficialmente el derecho a conducir motocicletas y, por tanto, no se les conceden permisos. Aun así, las iraníes llevan años plantando cara a estas restricciones. Durante décadas han convertido sus propios cuerpos en herramientas de resistencia; cada vez que se suben a una moto toman una decisión consciente de traspasar los límites impuestos en nombre de la ley, la tradición o el miedo
+[Local] Image saved: article_images\Local_5.jpg
+[Local] 
+Translated Titles:
+[Local] 1 - Trump's tariffs are illegal
+[Local] 2 - Audacity against the housing crisis
+[Local] 3 - Monument to forgetfulness
+[Local] 4 - Son of foreigners
+[Local] 5 - 'Iranian bikers'
+[Local]
+Word Frequency (Repeated more than 2 times):
+[Local] No word repeated more than twice
+[Local] Session Finished
+
+Starting BrowserStack Tests...
+
+Launching: Windows Chrome
+Launching: Mac Firefox
+Launching: Windows Edge
+Launching: Mac Chrome
+Launching: Mac Safari
+C:\Users\karti\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\remote_connection.py:420: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+  headers = self.get_remote_connection_headers(parsed_url, self._client_config.keep_alive)
+[Mac Chrome] Starting session
+[Mac Safari] Starting session
+[Mac Chrome] Cookies accepted
+[Mac Firefox] Starting session
+[Windows Chrome] Starting session
+[Windows Edge] Starting session
+[Mac Safari] Cookies accepted
+[Mac Firefox] Cookies accepted
+[Mac Safari] 
+Article 1
+[Mac Safari] Title (ES): Los aranceles de Trump son ilegales
+[Mac Chrome] 
+Article 1
+[Mac Chrome] Title (ES): Los aranceles de Trump son ilegales
+[Windows Edge] 
+Article 1
+[Windows Edge] Title (ES): Los aranceles de Trump son ilegales
+[Mac Safari] Content:
+El Tribunal Supremo marca un límite constitucional claro al presidente, que ha
+jugado de manera caprichosa con el comercio mundial El Tribunal Supremo de
+Estados Unidos asestó este viernes un golpe letal a la política de intimidación
+comercial del presidente Donald Trump contra el resto del mundo, al declarar
+ilegales la mayor parte de los aranceles a las importaciones aprobados por
+decreto por la Casa Blanca. Se trata de un golpe histórico al pilar sobre el que
+descansa la política económica del actual Gobierno de EE UU y una de sus
+principales herramientas de presión en política internacional. Pero sobre todo
+establece un límite claro al Ejecutivo al dictar que el mandatario ha excedido
+la autoridad que le otorgan las leyes estadounidenses. Después de un año de
+ejercicio del poder abusivo y autoritario, esta sentencia supone la mayor
+afirmación de los equilibrios de poder de los que presume la democracia
+estadounidense. Tres magistrados conservadores se sumaron a los tres de
+sensibilidad demócrata para formar una mayoría poco habitual y reafirmar una
+cuestión constitucional inequívoca: los aranceles actúan como impuestos, y el
+Ejecutivo no tiene poder para subir impuestos. Trump ha utilizado de forma
+inconstitucional leyes de emergencia. Con este subterfugio, en febrero de 2025
+impuso aranceles a Canadá, México y China y en abril estableció un arancel
+general del 10% sobre prácticamente todos los países. Los pequeños importadores
+y los Estados demócratas denunciaron la falta de autoridad del presidente para
+subir los impuestos a los estadounidenses. Los aranceles al acero, el aluminio o
+los automóviles no se ven afectados por esta sentencia porque fueron impuestos
+por otros métodos legales.
+[Mac Safari] Image saved: article_images\Mac Safari_1.jpg
+[Windows Edge] Content:
+El Tribunal Supremo marca un límite constitucional claro al presidente, que ha
+jugado de manera caprichosa con el comercio mundial
+[Windows Edge] Image saved: article_images\Windows Edge_1.jpg
+[Mac Chrome] Content:
+El Tribunal Supremo marca un límite constitucional claro al presidente, que ha
+jugado de manera caprichosa con el comercio mundial El Tribunal Supremo de
+Estados Unidos asestó este viernes un golpe letal a la política de intimidación
+comercial del presidente Donald Trump contra el resto del mundo, al declarar
+ilegales la mayor parte de los aranceles a las importaciones aprobados por
+decreto por la Casa Blanca. Se trata de un golpe histórico al pilar sobre el que
+descansa la política económica del actual Gobierno de EE UU y una de sus
+principales herramientas de presión en política internacional. Pero sobre todo
+establece un límite claro al Ejecutivo al dictar que el mandatario ha excedido
+la autoridad que le otorgan las leyes estadounidenses. Después de un año de
+ejercicio del poder abusivo y autoritario, esta sentencia supone la mayor
+afirmación de los equilibrios de poder de los que presume la democracia
+estadounidense. Tres magistrados conservadores se sumaron a los tres de
+sensibilidad demócrata para formar una mayoría poco habitual y reafirmar una
+cuestión constitucional inequívoca: los aranceles actúan como impuestos, y el
+Ejecutivo no tiene poder para subir impuestos. Trump ha utilizado de forma
+inconstitucional leyes de emergencia. Con este subterfugio, en febrero de 2025
+impuso aranceles a Canadá, México y China y en abril estableció un arancel
+general del 10% sobre prácticamente todos los países. Los pequeños importadores
+y los Estados demócratas denunciaron la falta de autoridad del presidente para
+subir los impuestos a los estadounidenses. Los aranceles al acero, el aluminio o
+los automóviles no se ven afectados por esta sentencia porque fueron impuestos
+por otros métodos legales.
+[Mac Chrome] Image saved: article_images\Mac Chrome_1.jpg
+[Mac Chrome] 
+Article 2
+[Mac Chrome] Title (ES): Audacia contra la crisis de vivienda
+[Windows Edge] 
+Article 2
+[Windows Edge] Title (ES): Audacia contra la crisis de vivienda
+[Mac Chrome] Content:
+El Gobierno de Cataluña muestra el necesario atrevimiento para intervenir en el
+principal problema de los españoles Cataluña será la primera comunidad en atacar
+directamente la especulación sobre la vivienda. El Gobierno de Salvador Illa ha
+pactado con los comunes limitar las adquisiciones de pisos por parte de grandes
+y pequeños propietarios. Como regla general, empresas y particulares podrán
+hacerse con casas para fijar su domicilio y su segunda residencia. A partir de
+ahí, los grandes patrimonios podrán comprar edificios enteros, y los pequeños,
+entre dos y tres viviendas más. En todos los casos, estas deberán destinarse a
+alquiler habitual respetando los precios máximos fijados. La patronal catalana
+ha tildado la medida de “filocomunista”, mientras que el Sindicato de Inquilinos
+la ha criticado por considerar que debería haber ido más lejos. El precio de la
+vivienda, que se ha más que duplicado desde 2014, está teniendo consecuencias
+dramáticas para la economía del día a día de la clase media española. Se come
+las subidas de sueldo, limita la movilidad, agranda las bolsas de precariedad y
+afecta a todos los gastos de las familias. La subida es tan pronunciada que los
+sueldos bajos no pueden ahorrar para comprar. Los que viven de alquiler son
+expulsados de su barrio en cuanto llega una renovación. Es el principal problema
+de los españoles, según el CIS.
+[Windows Edge] Content:
+El Gobierno de Cataluña muestra el necesario atrevimiento para intervenir en el
+principal problema de los españoles
+[Mac Chrome] Image saved: article_images\Mac Chrome_2.jpg
+[Windows Edge] Image saved: article_images\Windows Edge_2.jpg
+[Mac Chrome] 
+Article 3
+[Mac Chrome] Title (ES): Monumento a la desmemoria
+[Windows Edge] 
+Article 3
+[Mac Chrome] Content:
+La lectura de la inscripción del Arco del Triunfo de Madrid basta para saber que
+no es una puerta de acceso a la ciudad Todavía hoy, quienquiera que por vez
+primera haga su ingreso en la capital de España procedente del noroeste de la
+Península es recibido por un imponente monumento en forma de arco rematado por
+una soberbia cuadriga. Normalmente, no prestará atención a la inscripción
+situada sobre su entablamiento, desde el momento en que se sirve de una lengua
+muerta. No cabe, sin embargo, excluir que quien así se acerca a Madrid sea
+alguien con alguna cultura, la suficiente para advertir que esa lengua es el
+latín, cuya ep...
+[Windows Edge] Title (ES): Monumento a la desmemoria
+[Mac Chrome] Image saved: article_images\Mac Chrome_3.jpg
+[Windows Edge] Content:
+La lectura de la inscripción del Arco del Triunfo de Madrid basta para saber que
+no es una puerta de acceso a la ciudad
+[Windows Edge] Image saved: article_images\Windows Edge_3.jpg
+[Windows Edge] 
+Article 4
+[Windows Chrome] Cookies accepted
+[Windows Edge] Title (ES): Hijo de extranjeros
+[Mac Chrome] 
+Article 4
+[Mac Chrome] Title (ES): Hijo de extranjeros
+[Mac Chrome] Content:
+Dar una enseñanza de primera calidad a los descendientes de inmigrantes es la
+herramienta insustituible para integrarlos A diferencia de sus padres, el hijo
+de inmigrantes vive de verdad en el nuevo país. Quizás nació en el otro, pero
+apenas le quedan recuerdos, así que el peso de la nostalgia por la antigua vida
+no puede estorbar su integración. Los padres, los abuelos, o hablan el nuevo
+idioma con mucho acento o no llegan a hablarlo nunca; con esa capacidad
+fulgurante de aprendizaje que tiene un niño, el hijo o nieto se sumerge en el
+nuevo idioma con una destreza de nadador instintivo, y a la vez domina
+perfectamen...
+[Mac Chrome] Image saved: article_images\Mac Chrome_4.jpg
+[Windows Edge] Content:
+Dar una enseñanza de primera calidad a los descendientes de inmigrantes es la
+herramienta insustituible para integrarlos
+[Windows Edge] Image saved: article_images\Windows Edge_4.jpg
+[Mac Chrome] 
+Article 5
+[Mac Chrome] Title (ES): ‘Moteras iraníes’
+[Mac Chrome] Content not found
+[Mac Chrome] Image saved: article_images\Mac Chrome_5.jpg
+[Mac Chrome] 
+Translated Titles:
+[Windows Edge] 
+Article 5
+[Mac Safari] 
+Article 2
+[Windows Edge] Title (ES): 
+[Mac Firefox] 
+Article 1
+[Mac Safari] Title (ES): Audacia contra la crisis de vivienda
+[Windows Edge] Content not found
+[Mac Firefox] Title (ES): Los aranceles de Trump son ilegales
+[Windows Edge] Image saved: article_images\Windows Edge_5.jpg
+[Windows Edge] 
+Translated Titles:
+[Mac Firefox] Content:
+El Tribunal Supremo marca un límite constitucional claro al presidente, que ha
+jugado de manera caprichosa con el comercio mundial El Tribunal Supremo de
+Estados Unidos asestó este viernes un golpe letal a la política de intimidación
+comercial del presidente Donald Trump contra el resto del mundo, al declarar
+ilegales la mayor parte de los aranceles a las importaciones aprobados por
+decreto por la Casa Blanca. Se trata de un golpe histórico al pilar sobre el que
+descansa la política económica del actual Gobierno de EE UU y una de sus
+principales herramientas de presión en política internacional. Pero sobre todo
+establece un límite claro al Ejecutivo al dictar que el mandatario ha excedido
+la autoridad que le otorgan las leyes estadounidenses. Después de un año de
+ejercicio del poder abusivo y autoritario, esta sentencia supone la mayor
+afirmación de los equilibrios de poder de los que presume la democracia
+estadounidense. Tres magistrados conservadores se sumaron a los tres de
+sensibilidad demócrata para formar una mayoría poco habitual y reafirmar una
+cuestión constitucional inequívoca: los aranceles actúan como impuestos, y el
+Ejecutivo no tiene poder para subir impuestos. Trump ha utilizado de forma
+inconstitucional leyes de emergencia. Con este subterfugio, en febrero de 2025
+impuso aranceles a Canadá, México y China y en abril estableció un arancel
+general del 10% sobre prácticamente todos los países. Los pequeños importadores
+y los Estados demócratas denunciaron la falta de autoridad del presidente para
+subir los impuestos a los estadounidenses. Los aranceles al acero, el aluminio o
+los automóviles no se ven afectados por esta sentencia porque fueron impuestos
+por otros métodos legales.
+[Mac Safari] Content:
+El Gobierno de Cataluña muestra el necesario atrevimiento para intervenir en el
+principal problema de los españoles Cataluña será la primera comunidad en atacar
+directamente la especulación sobre la vivienda. El Gobierno de Salvador Illa ha
+pactado con los comunes limitar las adquisiciones de pisos por parte de grandes
+y pequeños propietarios. Como regla general, empresas y particulares podrán
+hacerse con casas para fijar su domicilio y su segunda residencia. A partir de
+ahí, los grandes patrimonios podrán comprar edificios enteros, y los pequeños,
+entre dos y tres viviendas más. En todos los casos, estas deberán destinarse a
+alquiler habitual respetando los precios máximos fijados. La patronal catalana
+ha tildado la medida de “filocomunista”, mientras que el Sindicato de Inquilinos
+la ha criticado por considerar que debería haber ido más lejos. El precio de la
+vivienda, que se ha más que duplicado desde 2014, está teniendo consecuencias
+dramáticas para la economía del día a día de la clase media española. Se come
+las subidas de sueldo, limita la movilidad, agranda las bolsas de precariedad y
+afecta a todos los gastos de las familias. La subida es tan pronunciada que los
+sueldos bajos no pueden ahorrar para comprar. Los que viven de alquiler son
+expulsados de su barrio en cuanto llega una renovación. Es el principal problema
+de los españoles, según el CIS.
+[Mac Chrome] 1 - Trump's tariffs are illegal
+[Mac Chrome] 2 - Audacity against the housing crisis
+[Mac Chrome] 3 - Monument to forgetfulness
+[Mac Chrome] 4 - Son of foreigners
+[Mac Chrome] 5 - 'Iranian bikers'
+[Mac Chrome]
+Word Frequency (Repeated more than 2 times):
+[Mac Chrome] No word repeated more than twice
+[Mac Chrome] Session Finished
+[Mac Safari] Image saved: article_images\Mac Safari_2.jpg
+[Mac Firefox] Image saved: article_images\Mac Firefox_1.jpg
+[Windows Edge] 1 - Trump's tariffs are illegal
+[Windows Edge] 2 - Audacity against the housing crisis
+[Windows Edge] 3 - Monument to forgetfulness
+[Windows Edge] 4 - Son of foreigners
+[Windows Edge] 5 -
+[Windows Edge]
+Word Frequency (Repeated more than 2 times):
+[Windows Edge] No word repeated more than twice
+[Windows Edge] Session Finished
+[Mac Safari] 
+Article 3
+[Mac Safari] Title (ES): Monumento a la desmemoria
+[Mac Safari] Content:
+La lectura de la inscripción del Arco del Triunfo de Madrid basta para saber que
+no es una puerta de acceso a la ciudad Todavía hoy, quienquiera que por vez
+primera haga su ingreso en la capital de España procedente del noroeste de la
+Península es recibido por un imponente monumento en forma de arco rematado por
+una soberbia cuadriga. Normalmente, no prestará atención a la inscripción
+situada sobre su entablamiento, desde el momento en que se sirve de una lengua
+muerta. No cabe, sin embargo, excluir que quien así se acerca a Madrid sea
+alguien con alguna cultura, la suficiente para advertir que esa lengua es el
+latín, cuya ep... igrafía además algo conoce. A nuestros efectos conviene
+imaginar que la historia de España no es su fuerte.
+[Mac Safari] Image saved: article_images\Mac Safari_3.jpg
+[Mac Safari] 
+Article 4
+[Mac Safari] Title (ES): Hijo de extranjeros
+[Mac Safari] Content:
+Dar una enseñanza de primera calidad a los descendientes de inmigrantes es la
+herramienta insustituible para integrarlos A diferencia de sus padres, el hijo
+de inmigrantes vive de verdad en el nuevo país. Quizás nació en el otro, pero
+apenas le quedan recuerdos, así que el peso de la nostalgia por la antigua vida
+no puede estorbar su integración. Los padres, los abuelos, o hablan el nuevo
+idioma con mucho acento o no llegan a hablarlo nunca; con esa capacidad
+fulgurante de aprendizaje que tiene un niño, el hijo o nieto se sumerge en el
+nuevo idioma con una destreza de nadador instintivo, y a la vez domina
+perfectamen... te el antiguo, que es la lengua secreta de la familia y los
+primeros afectos, de modo que se convierte en un traductor imprescindible para
+sus mayores a la hora de rellenar impresos y navegar hostiles interrogatorios en
+dependencias administrativas. En Lo que en nosotros vive, el bello libro de
+memorias de Manuel Fernández-Montesinos, el sobrino de García Lorca que con ocho
+años acompañó a su familia materna al destierro en Nueva York, se cuenta que el
+abuelo, don Federico, aislado en su completa ignorancia del inglés, llamaba al
+nieto a la hora de los noticiarios de la radio para que le tradujera las
+noticias sobre los avances de los ejércitos aliados en los frentes de la guerra
+en Europa. El niño jugaba o hacía sin dificultad los deberes escolares en la
+nueva lengua, y del fondo del pasillo llegaba la voz grave y perentoria del
+abuelo: “¡Manolo, la radio!”. La maravilla de la flexibilidad infantil le
+permitía a aquel niño de la Vega de Granada navegar entre el mundo español de su
+familia, ensombrecida por el destierro y por un doble crimen indeleble —el de su
+padre, el de su tío favorito— y su nueva vida abierta y escolar en Nueva York,
+donde adquirió una afición por el béisbol que siguió manteniendo cuando llevaba
+muchos años viviendo de regreso en España.
+[Mac Safari] Image saved: article_images\Mac Safari_4.jpg
+[Mac Safari] 
+Article 5
+[Mac Safari] Title (ES): ‘Moteras iraníes’ 
+[Mac Safari] Content not found
+[Mac Safari] Image saved: article_images\Mac Safari_5.jpg
+[Mac Safari] 
+Translated Titles:
+[Mac Firefox] 
+Article 2
+[Mac Firefox] Title (ES): Audacia contra la crisis de vivienda
+[Mac Firefox] Content:
+El Gobierno de Cataluña muestra el necesario atrevimiento para intervenir en el
+principal problema de los españoles Cataluña será la primera comunidad en atacar
+directamente la especulación sobre la vivienda. El Gobierno de Salvador Illa ha
+pactado con los comunes limitar las adquisiciones de pisos por parte de grandes
+y pequeños propietarios. Como regla general, empresas y particulares podrán
+hacerse con casas para fijar su domicilio y su segunda residencia. A partir de
+ahí, los grandes patrimonios podrán comprar edificios enteros, y los pequeños,
+entre dos y tres viviendas más. En todos los casos, estas deberán destinarse a
+alquiler habitual respetando los precios máximos fijados. La patronal catalana
+ha tildado la medida de “filocomunista”, mientras que el Sindicato de Inquilinos
+la ha criticado por considerar que debería haber ido más lejos. El precio de la
+vivienda, que se ha más que duplicado desde 2014, está teniendo consecuencias
+dramáticas para la economía del día a día de la clase media española. Se come
+las subidas de sueldo, limita la movilidad, agranda las bolsas de precariedad y
+afecta a todos los gastos de las familias. La subida es tan pronunciada que los
+sueldos bajos no pueden ahorrar para comprar. Los que viven de alquiler son
+expulsados de su barrio en cuanto llega una renovación. Es el principal problema
+de los españoles, según el CIS.
+[Mac Firefox] Image saved: article_images\Mac Firefox_2.jpg
+[Mac Safari] 1 - Trump's tariffs are illegal
+[Mac Safari] 2 - Audacity against the housing crisis
+[Mac Safari] 3 - Monument to forgetfulness
+[Mac Safari] 4 - Son of foreigners
+[Mac Safari] 5 - 'Iranian bikers'
+[Mac Safari]
+Word Frequency (Repeated more than 2 times):
+[Mac Safari] No word repeated more than twice
+[Mac Safari] Session Finished
+[Mac Firefox] 
+Article 3
+[Mac Firefox] Title (ES): Monumento a la desmemoria
+[Mac Firefox] Content:
+La lectura de la inscripción del Arco del Triunfo de Madrid basta para saber que
+no es una puerta de acceso a la ciudad Todavía hoy, quienquiera que por vez
+primera haga su ingreso en la capital de España procedente del noroeste de la
+Península es recibido por un imponente monumento en forma de arco rematado por
+una soberbia cuadriga. Normalmente, no prestará atención a la inscripción
+situada sobre su entablamiento, desde el momento en que se sirve de una lengua
+muerta. No cabe, sin embargo, excluir que quien así se acerca a Madrid sea
+alguien con alguna cultura, la suficiente para advertir que esa lengua es el
+latín, cuya ep...
+[Mac Firefox] Image saved: article_images\Mac Firefox_3.jpg
+[Windows Chrome] 
+Article 1
+[Windows Chrome] Title (ES): Los aranceles de Trump son ilegales
+[Windows Chrome] Content:
+El Tribunal Supremo marca un límite constitucional claro al presidente, que ha
+jugado de manera caprichosa con el comercio mundial El Tribunal Supremo de
+Estados Unidos asestó este viernes un golpe letal a la política de intimidación
+comercial del presidente Donald Trump contra el resto del mundo, al declarar
+ilegales la mayor parte de los aranceles a las importaciones aprobados por
+decreto por la Casa Blanca. Se trata de un golpe histórico al pilar sobre el que
+descansa la política económica del actual Gobierno de EE UU y una de sus
+principales herramientas de presión en política internacional. Pero sobre todo
+establece un límite claro al Ejecutivo al dictar que el mandatario ha excedido
+la autoridad que le otorgan las leyes estadounidenses. Después de un año de
+ejercicio del poder abusivo y autoritario, esta sentencia supone la mayor
+afirmación de los equilibrios de poder de los que presume la democracia
+estadounidense. Tres magistrados conservadores se sumaron a los tres de
+sensibilidad demócrata para formar una mayoría poco habitual y reafirmar una
+cuestión constitucional inequívoca: los aranceles actúan como impuestos, y el
+Ejecutivo no tiene poder para subir impuestos. Trump ha utilizado de forma
+inconstitucional leyes de emergencia. Con este subterfugio, en febrero de 2025
+impuso aranceles a Canadá, México y China y en abril estableció un arancel
+general del 10% sobre prácticamente todos los países. Los pequeños importadores
+y los Estados demócratas denunciaron la falta de autoridad del presidente para
+subir los impuestos a los estadounidenses. Los aranceles al acero, el aluminio o
+los automóviles no se ven afectados por esta sentencia porque fueron impuestos
+por otros métodos legales.
+[Windows Chrome] Image saved: article_images\Windows Chrome_1.jpg
+[Mac Firefox] 
+Article 4
+[Mac Firefox] Title (ES): Hijo de extranjeros
+[Mac Firefox] Content:
+Dar una enseñanza de primera calidad a los descendientes de inmigrantes es la
+herramienta insustituible para integrarlos A diferencia de sus padres, el hijo
+de inmigrantes vive de verdad en el nuevo país. Quizás nació en el otro, pero
+apenas le quedan recuerdos, así que el peso de la nostalgia por la antigua vida
+no puede estorbar su integración. Los padres, los abuelos, o hablan el nuevo
+idioma con mucho acento o no llegan a hablarlo nunca; con esa capacidad
+fulgurante de aprendizaje que tiene un niño, el hijo o nieto se sumerge en el
+nuevo idioma con una destreza de nadador instintivo, y a la vez domina
+perfectamen...
+[Mac Firefox] Image saved: article_images\Mac Firefox_4.jpg
+[Windows Chrome] 
+Article 2
+[Mac Firefox] 
+Article 5
+[Mac Firefox] Title (ES): ‘Moteras iraníes’
+[Mac Firefox] Content not found
+[Mac Firefox] Image saved: article_images\Mac Firefox_5.jpg
+[Mac Firefox] 
+Translated Titles:
+[Mac Firefox] 1 - Trump's tariffs are illegal
+[Mac Firefox] 2 - Audacity against the housing crisis
+[Mac Firefox] 3 - Monument to forgetfulness
+[Mac Firefox] 4 - Son of foreigners
+[Mac Firefox] 5 - 'Iranian bikers'
+[Mac Firefox]
+Word Frequency (Repeated more than 2 times):
+[Mac Firefox] No word repeated more than twice
+[Mac Firefox] Session Finished
+[Windows Chrome] Title (ES): Audacia contra la crisis de vivienda
+[Windows Chrome] Content:
+El Gobierno de Cataluña muestra el necesario atrevimiento para intervenir en el
+principal problema de los españoles Cataluña será la primera comunidad en atacar
+directamente la especulación sobre la vivienda. El Gobierno de Salvador Illa ha
+pactado con los comunes limitar las adquisiciones de pisos por parte de grandes
+y pequeños propietarios. Como regla general, empresas y particulares podrán
+hacerse con casas para fijar su domicilio y su segunda residencia. A partir de
+ahí, los grandes patrimonios podrán comprar edificios enteros, y los pequeños,
+entre dos y tres viviendas más. En todos los casos, estas deberán destinarse a
+alquiler habitual respetando los precios máximos fijados. La patronal catalana
+ha tildado la medida de “filocomunista”, mientras que el Sindicato de Inquilinos
+la ha criticado por considerar que debería haber ido más lejos. El precio de la
+vivienda, que se ha más que duplicado desde 2014, está teniendo consecuencias
+dramáticas para la economía del día a día de la clase media española. Se come
+las subidas de sueldo, limita la movilidad, agranda las bolsas de precariedad y
+afecta a todos los gastos de las familias. La subida es tan pronunciada que los
+sueldos bajos no pueden ahorrar para comprar. Los que viven de alquiler son
+expulsados de su barrio en cuanto llega una renovación. Es el principal problema
+de los españoles, según el CIS.
+[Windows Chrome] Image saved: article_images\Windows Chrome_2.jpg
+[Windows Chrome] 
+Article 3
+[Windows Chrome] Title (ES): Monumento a la desmemoria
+[Windows Chrome] Content:
+La lectura de la inscripción del Arco del Triunfo de Madrid basta para saber que
+no es una puerta de acceso a la ciudad Todavía hoy, quienquiera que por vez
+primera haga su ingreso en la capital de España procedente del noroeste de la
+Península es recibido por un imponente monumento en forma de arco rematado por
+una soberbia cuadriga. Normalmente, no prestará atención a la inscripción
+situada sobre su entablamiento, desde el momento en que se sirve de una lengua
+muerta. No cabe, sin embargo, excluir que quien así se acerca a Madrid sea
+alguien con alguna cultura, la suficiente para advertir que esa lengua es el
+latín, cuya ep...
+[Windows Chrome] Content:
+La lectura de la inscripción del Arco del Triunfo de Madrid basta para saber que
+no es una puerta de acceso a la ciudad Todavía hoy, quienquiera que por vez
+primera haga su ingreso en la capital de España procedente del noroeste de la
+Península es recibido por un imponente monumento en forma de arco rematado por
+una soberbia cuadriga. Normalmente, no prestará atención a la inscripción
+situada sobre su entablamiento, desde el momento en que se sirve de una lengua
+muerta. No cabe, sin embargo, excluir que quien así se acerca a Madrid sea
+alguien con alguna cultura, la suficiente para advertir que esa lengua es el
+latín, cuya ep...
+muerta. No cabe, sin embargo, excluir que quien así se acerca a Madrid sea
+alguien con alguna cultura, la suficiente para advertir que esa lengua es el
+latín, cuya ep...
+[Windows Chrome] Image saved: article_images\Windows Chrome_3.jpg
+[Windows Chrome]
+Article 4
+[Windows Chrome] Title (ES): Hijo de extranjeros
+[Windows Chrome] Content not found
+[Windows Chrome] Image saved: article_images\Windows Chrome_4.jpg
+[Windows Chrome]
+Article 5
+[Windows Chrome] Title (ES): ‘Moteras iraníes’
+[Windows Chrome] Content not found
+[Windows Chrome] Image saved: article_images\Windows Chrome_5.jpg
+[Windows Chrome]
+Translated Titles:
+[Windows Chrome] 1 - Trump's tariffs are illegal
+[Windows Chrome] 2 - Audacity against the housing crisis
+[Windows Chrome] 3 - Monument to forgetfulness
+[Windows Chrome] 4 - Son of foreigners
+[Windows Chrome] 5 - 'Iranian bikers'
+[Windows Chrome]
+Word Frequency (Repeated more than 2 times):
+[Windows Chrome] No word repeated more than twice
+[Windows Chrome] Session Finished
