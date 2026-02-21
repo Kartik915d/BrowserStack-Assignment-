@@ -14,7 +14,6 @@ from selenium.common.exceptions import TimeoutException
 URL = "https://elpais.com/opinion/"
 IMAGE_FOLDER = "article_images"
 
-
 # ==========================================
 # LOGGER
 # ==========================================
@@ -22,6 +21,23 @@ IMAGE_FOLDER = "article_images"
 def log(session, message):
     print(f"[{session}] {message}")
 
+# ==========================================
+# BROWSERSTACK STATUS UPDATER
+# ==========================================
+
+def update_bstack_status(driver, status, reason):
+    """Sends a JavaScript executor command to update the BrowserStack dashboard."""
+    try:
+        # Sanitize reason for JS string
+        clean_reason = reason.replace('"', "'").replace("\n", " ")[:255]
+        executor_object = {
+            "action": "setSessionStatus",
+            "arguments": {"status": status, "reason": clean_reason}
+        }
+        driver.execute_script(f'browserstack_executor: {json.dumps(executor_object)}')
+    except:
+        # Ignore if running locally or if driver is closed
+        pass
 
 # ==========================================
 # IMAGE DOWNLOAD
@@ -36,7 +52,6 @@ def download_image(image_url, file_path, session):
         log(session, f"Image saved: {file_path}")
     except Exception as e:
         log(session, f"Image download failed: {e}")
-
 
 # ==========================================
 # SCRAPER FUNCTION
@@ -66,7 +81,6 @@ def scrape_articles(driver, session_name="Local"):
         links = [a.get_attribute("href") for a in articles]
 
         os.makedirs(IMAGE_FOLDER, exist_ok=True)
-
         titles_spanish = []
 
         for i, link in enumerate(links, 1):
@@ -75,30 +89,23 @@ def scrape_articles(driver, session_name="Local"):
 
             # TITLE
             try:
-                title = WebDriverWait(driver, 10).until(
+                title_el = WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.TAG_NAME, "h1"))
-                ).text
+                )
+                title = title_el.text
                 log(session_name, f"Title (ES): {title}")
                 titles_spanish.append(title)
             except TimeoutException:
                 log(session_name, "Title not found")
                 titles_spanish.append("Unknown")
 
-            # CONTENT (first 3 paragraphs)
+            # CONTENT
             try:
                 paragraphs = driver.find_elements(By.CSS_SELECTOR, "article p")
-                full_text = ""
-
-                for p in paragraphs[:3]:
-                    if p.text.strip():
-                        full_text += p.text.strip() + " "
-
+                full_text = " ".join([p.text.strip() for p in paragraphs[:3] if p.text.strip()])
                 if full_text:
-                    wrapped = textwrap.fill(full_text.strip(), width=80)
+                    wrapped = textwrap.fill(full_text, width=80)
                     log(session_name, f"Content:\n{wrapped}")
-                else:
-                    log(session_name, "Content not found")
-
             except Exception:
                 log(session_name, "Content not found")
 
@@ -106,172 +113,119 @@ def scrape_articles(driver, session_name="Local"):
             try:
                 image = driver.find_element(By.CSS_SELECTOR, "article img")
                 image_url = image.get_attribute("src")
-
                 if image_url:
-                    file_name = f"{session_name}_{i}.jpg"
-                    file_path = os.path.join(IMAGE_FOLDER, file_name)
+                    file_path = os.path.join(IMAGE_FOLDER, f"{session_name}_{i}.jpg")
                     download_image(image_url, file_path, session_name)
-
             except Exception:
                 log(session_name, "Image not found")
 
-        # ==========================================
-        # TRANSLATION
-        # ==========================================
-
-        log(session_name, "\nTranslated Titles:")
-
+        # TRANSLATION & ANALYSIS
+        log(session_name, "\nTranslating...")
         translator = GoogleTranslator(source="es", target="en")
         titles_english = translator.translate_batch(titles_spanish)
 
         for idx, t in enumerate(titles_english, 1):
             log(session_name, f"{idx} - {t}")
 
-        # ==========================================
-        # WORD FREQUENCY
-        # ==========================================
-
-        log(session_name, "\nWord Frequency (Repeated more than 2 times):")
-
-        stopwords = {"the", "and", "for", "with", "that", "this", "will", "are", "but", "not"}
-
+        # Check word frequency
         words = []
         for title in titles_english:
             clean_words = re.findall(r"\b[a-zA-Z]+\b", title.lower())
-            for word in clean_words:
-                if len(word) > 2 and word not in stopwords:
-                    words.append(word)
-
+            words.extend([w for w in clean_words if len(w) > 2])
+        
         count = Counter(words)
-
-        repeated = False
         for word, freq in count.items():
             if freq > 2:
-                log(session_name, f"{word} -> {freq}")
-                repeated = True
-
-        if not repeated:
-            log(session_name, "No word repeated more than twice")
+                log(session_name, f"Repeated: {word} -> {freq}")
 
         log(session_name, "Session Finished")
+        return True # Success
 
-    finally:
-        driver.quit()
-
+    except Exception as e:
+        log(session_name, f"Error during scraping: {e}")
+        raise e
 
 # ==========================================
-# BROWSERSTACK ENVIRONMENTS (5 PARALLEL)
+# BROWSERSTACK ENVIRONMENTS
 # ==========================================
 
 def get_environments():
-    return [
-        {
-            "browserName": "Chrome",
-            "browserVersion": "latest",
-            "bstack:options": {
-                "os": "Windows",
-                "osVersion": "11",
-                "sessionName": "Windows Chrome"
-            }
-        },
-        {
-            "browserName": "Firefox",
-            "browserVersion": "latest",
-            "bstack:options": {
-                "os": "OS X",
-                "osVersion": "Ventura",
-                "sessionName": "Mac Firefox"
-            }
-        },
-        {
-            "browserName": "Edge",
-            "browserVersion": "latest",
-            "bstack:options": {
-                "os": "Windows",
-                "osVersion": "10",
-                "sessionName": "Windows Edge"
-            }
-        },
-        {
-            "browserName": "Chrome",
-            "browserVersion": "latest",
-            "bstack:options": {
-                "os": "OS X",
-                "osVersion": "Monterey",
-                "sessionName": "Mac Chrome"
-            }
-        },
-        {
-            "browserName": "Safari",
-            "browserVersion": "latest",
-            "bstack:options": {
-                "os": "OS X",
-                "osVersion": "Ventura",
-                "sessionName": "Mac Safari"
-            }
-        }
+    # Adding project/build grouping for organized dashboard
+    common_options = {
+        "projectName": "El Pais Scraping",
+        "buildName": "BStack Build 1.0",
+    }
+    
+    envs = [
+        {"browserName": "Chrome", "browserVersion": "latest", "bstack:options": {"os": "Windows", "osVersion": "11", "sessionName": "Windows Chrome"}},
+        {"browserName": "Firefox", "browserVersion": "latest", "bstack:options": {"os": "OS X", "osVersion": "Ventura", "sessionName": "Mac Firefox"}},
+        {"browserName": "Edge", "browserVersion": "latest", "bstack:options": {"os": "Windows", "osVersion": "10", "sessionName": "Windows Edge"}},
+        {"browserName": "Chrome", "browserVersion": "latest", "bstack:options": {"os": "OS X", "osVersion": "Monterey", "sessionName": "Mac Chrome"}},
+        {"browserName": "Safari", "browserVersion": "latest", "bstack:options": {"os": "OS X", "osVersion": "Ventura", "sessionName": "Mac Safari"}}
     ]
-
+    
+    for env in envs:
+        env["bstack:options"].update(common_options)
+    return envs
 
 # ==========================================
 # BROWSERSTACK EXECUTION
 # ==========================================
 
+import json
+
 def run_browserstack_test(caps, username, access_key):
+    driver = None
+    session_name = caps["bstack:options"]["sessionName"]
     try:
-        print("Launching:", caps["bstack:options"]["sessionName"])
-
+        log(session_name, f"Launching on BrowserStack...")
         options = webdriver.ChromeOptions()
-
         for key, value in caps.items():
             options.set_capability(key, value)
 
-        # W3C AUTHENTICATION (Correct Method)
         hub_url = f"https://{username}:{access_key}@hub-cloud.browserstack.com/wd/hub"
+        driver = webdriver.Remote(command_executor=hub_url, options=options)
 
-        driver = webdriver.Remote(
-            command_executor=hub_url,
-            options=options
-        )
-
-        scrape_articles(driver, caps["bstack:options"]["sessionName"])
+        scrape_articles(driver, session_name)
+        
+        # Mark PASSED on BrowserStack
+        update_bstack_status(driver, "passed", "Scraping completed without errors.")
 
     except Exception as e:
-        print("BROWSERSTACK ERROR:", e)
-
+        log(session_name, f"BROWSERSTACK FAIL: {e}")
+        if driver:
+            update_bstack_status(driver, "failed", str(e))
+    finally:
+        if driver:
+            driver.quit()
 
 # ==========================================
 # MAIN
 # ==========================================
 
 if __name__ == "__main__":
+    import sys
 
-    print("\nEnter BrowserStack credentials (or press Enter to skip cloud test)\n")
+    username = input("BrowserStack Username: ").strip()
+    access_key = input("BrowserStack Access Key: ").strip()
 
-    username = input("Username: ").strip()
-    access_key = input("Access Key: ").strip()
+    # 1. LOCAL TEST
+    print("\n--- Starting Local Test ---")
+    try:
+        local_driver = webdriver.Chrome()
+        scrape_articles(local_driver, "Local")
+    except Exception as e:
+        print(f"Local run failed: {e}")
+    finally:
+        try: local_driver.quit()
+        except: pass
 
-    # Local run
-    print("\nStarting Local Test...\n")
-    local_driver = webdriver.Chrome()
-    scrape_articles(local_driver, "Local")
-
-    # BrowserStack run
+    # 2. CLOUD TEST
     if username and access_key:
-        print("\nStarting BrowserStack Tests...\n")
-
+        print(f"\n--- Starting 5 Parallel BrowserStack Tests ---")
         environments = get_environments()
-
         with ThreadPoolExecutor(max_workers=5) as executor:
-            futures = []
             for env in environments:
-                futures.append(
-                    executor.submit(run_browserstack_test, env, username, access_key)
-                )
-
-            # Force exception visibility
-            for future in futures:
-                future.result()
-
+                executor.submit(run_browserstack_test, env, username, access_key)
     else:
-        print("\nBrowserStack test skipped.")
+        print("\nCloud credentials missing. Skipping BrowserStack.")
